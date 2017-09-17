@@ -1,4 +1,4 @@
-# python-flask-microservice
+# learn-python-flask-microservice
 
 This is the code used in this series of articles: 
 
@@ -13,6 +13,8 @@ This is a basic approach of building a Microservice on top of Flask, with some u
 - [Connexion](https://github.com/zalando/connexion)
 
 # Requirements
+
+Python 3.6
 
 We are going to build a microservice to index rooms information coming from another service (crawler). This service will be responsible for indexing the information into Elasticsearch.
 
@@ -34,6 +36,11 @@ The indexing will be a process of:
 | GET | /room/{id} | this method will return the room data for a given room id | Not started |
 | GET | /health-check | This endpoint retuns the state of the service | Not started |
 
+
+http://localhost:9090/ui
+
 # Running the environment
+
+pip install -r requirements.txt
 
 You need to have Docker installed in your machine, after that, just run this command `docker-compose build && docker-compose up -d`.
