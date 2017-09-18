@@ -37,7 +37,10 @@ The indexing will be a process of:
 | GET | /health-check | This endpoint retuns the state of the service | Not started |
 
 
-http://localhost:9090/ui
+http://localhost:9090/1.0/items/
+
+Swagger UI
+http://localhost:9090/1.0/ui
 
 # Running the environment
 
